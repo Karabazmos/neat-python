@@ -2,13 +2,12 @@
 
 # The `NEAT` section specifies parameters particular to the NEAT algorithm
 # or the experiment itself.  This is the only required section.
-
 [NEAT]
 fitness_criterion   = max
-fitness_threshold   = 1000000000000
-no_fitness_termination = True
-pop_size            = 100
-reset_on_extinction = 1
+fitness_threshold   = 40.0
+no_fitness_termination = False
+pop_size            = 2
+reset_on_extinction = 0
 
 [DefaultGenome]
 num_inputs              = 2
@@ -63,4 +62,3 @@ max_stagnation  = 20
 [DefaultReproduction]
 elitism            = 2
 survival_threshold = 0.2
-
